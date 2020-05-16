@@ -43,6 +43,15 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        // dong sau la de kiem tra authentication va khoa site
+        $this->loadComponent('Authentication.Authentication');
+
+        $this->loadComponent('Authorization.Authorization');
+
+        if($this->Authentication->getResult()->isValid()){
+          //debug($this->request->getAttribute('identity')->getIdentifier());
+          $this->set('user_id',$this->request->getAttribute('identity')->getIdentifier());
+        }
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.
@@ -50,4 +59,9 @@ class AppController extends Controller
          */
         //$this->loadComponent('FormProtection');
     }
+
+    //public function beforeFilter(\Cake\Event\EventInterface $ev){
+      //parent::beforeFilter($ev);
+      //$this->Authentication->addUnauthenticatedActions(['index','view']);
+    //}
 }

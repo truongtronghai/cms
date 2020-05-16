@@ -14,7 +14,7 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'CakePHP CMS Tutorial';
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,16 +40,28 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="/"><span>Cake</span>PHP</a>
+            <a href="/"><span>Cake</span>PHP CMS</a>
         </div>
         <div class="top-nav-links">
-            <a target="_blank" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" href="https://api.cakephp.org/4/">API</a>
+          <a target="" href="/cms/"><?= __("Home") ?></a>
+            <a target="" href="/cms/users/"><?= __("Users") ?></a>
+            <a target="" href="/cms/tags/"><?= __("Tags") ?></a>
+
+            <?php
+            if(isset($user_id)){
+            ?>
+              <a target="" href="/cms/users/view/<?= $user_id ?>"><?= __("User ID:") ?> <?= $user_id ?></a>
+              <a target="" href="/cms/users/logout/"><?= __("Logout") ?></a>
+            <?php
+            }else{
+            ?>
+               <a target="" href="/cms/users/login/"><?= __("Login") ?></a>
+            <?php } ?>
         </div>
     </nav>
     <main class="main">
         <div class="container">
-            <?= $this->Flash->render() ?>
+            <?= $this->Flash->render() ?> <!-- xuat ra thong bao -->
             <?= $this->fetch('content') ?>
         </div>
     </main>

@@ -23,6 +23,19 @@ use Cake\Http\BaseApplication;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
+// for Authentication plugin
+use Authentication\AuthenticationService;
+use Authentication\AuthenticationServiceInterface;
+use Authentication\AuthenticationServiceProviderInterface;
+use Authentication\MiddleWare\AuthenticationMiddleware;
+use Psr\Http\Message\ServerRequestInterface;
+// for Authorization plugin
+use Authorization\AuthorizationService;
+use Authorization\AuthorizationServiceInterface;
+use Authorization\AuthorizationServiceProviderInterface;
+use Authorization\Middleware\AuthorizationMiddleware;
+use Authorization\Policy\OrmResolver;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Application setup class.
@@ -30,7 +43,7 @@ use Cake\Routing\Middleware\RoutingMiddleware;
  * This defines the bootstrapping logic and middleware layers you
  * want to use in your application.
  */
-class Application extends BaseApplication
+class Application extends BaseApplication implements AuthenticationServiceProviderInterface, AuthorizationServiceProviderInterface
 {
     /**
      * Load all the application configuration and bootstrap logic.
@@ -55,6 +68,7 @@ class Application extends BaseApplication
         }
 
         // Load more plugins here
+        $this->addPlugin('Authorization');
     }
 
     /**
@@ -81,9 +95,39 @@ class Application extends BaseApplication
             // creating the middleware instance specify the cache config name by
             // using it's second constructor argument:
             // `new RoutingMiddleware($this, '_cake_routes_')`
-            ->add(new RoutingMiddleware($this));
+            ->add(new RoutingMiddleware($this))
+            //them vao Authentication sau khi them RoutingMiddleware
+            ->add(new AuthenticationMiddleware($this));
+
+        // Add authorization **after** authentication
+        $middlewareQueue->add(new AuthorizationMiddleware($this));
 
         return $middlewareQueue;
+    }
+
+    public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface {
+      $authenticationService = new AuthenticationService([
+        'unauthenticatedRedirect' => '/cms/users/login',
+        'queryParam' => 'redirect',
+      ]);
+
+      $authenticationService->loadIdentifier('Authentication.Password',[
+        'fields'=>['username'=>'email','password'=>'password']
+      ]);
+
+      $authenticationService->loadAuthenticator('Authentication.Session');
+
+      $authenticationService->loadAuthenticator('Authentication.Form',[
+        'fields'=>['username'=>'email','password'=>'password'],
+        'loginUrl'=>"/cms/users/login"
+      ]);
+
+      return $authenticationService;
+    }
+
+    public function getAuthorizationService(ServerRequestInterface $request): AuthorizationServiceInterface {
+      $resolver = new OrmResolver();
+      return new AuthorizationService($resolver);
     }
 
     /**

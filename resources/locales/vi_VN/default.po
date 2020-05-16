@@ -1,0 +1,331 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-05-16 14:36+0000\n"
+"PO-Revision-Date: 2020-05-16 21:52+0700\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: vi_VN\n"
+
+#: C:/wamp64/www/cms/templates/Articles/add.php:1
+#: C:/wamp64/www/cms/templates/Articles/index.php:2
+msgid "Add article"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/add.php:10
+#: C:/wamp64/www/cms/templates/Articles/edit.php:9
+msgid "Save"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/add.php:13
+#: C:/wamp64/www/cms/templates/Articles/edit.php:12
+#: C:/wamp64/www/cms/templates/Articles/view.php:12
+#: C:/wamp64/www/cms/templates/layout/error.php:40
+msgid "Back"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/edit.php:2
+msgid "Edit article"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:1
+msgid "Articles"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:7
+#: C:/wamp64/www/cms/templates/Tags/view.php:22
+#: C:/wamp64/www/cms/templates/Tags/view.php:46
+#: C:/wamp64/www/cms/templates/Users/view.php:50
+msgid "Title"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:10
+#: C:/wamp64/www/cms/templates/Tags/view.php:30
+#: C:/wamp64/www/cms/templates/Tags/view.php:50
+#: C:/wamp64/www/cms/templates/Users/view.php:34
+#: C:/wamp64/www/cms/templates/Users/view.php:54
+msgid "Created"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:29
+#: C:/wamp64/www/cms/templates/Tags/index.php:30
+#: C:/wamp64/www/cms/templates/Tags/view.php:66
+#: C:/wamp64/www/cms/templates/Users/index.php:32
+#: C:/wamp64/www/cms/templates/Users/view.php:70
+msgid "Edit"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:31
+#: C:/wamp64/www/cms/templates/Tags/edit.php:12
+#: C:/wamp64/www/cms/templates/Tags/index.php:31
+#: C:/wamp64/www/cms/templates/Tags/view.php:67
+#: C:/wamp64/www/cms/templates/Users/edit.php:12
+#: C:/wamp64/www/cms/templates/Users/index.php:33
+#: C:/wamp64/www/cms/templates/Users/view.php:71
+msgid "Delete"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/index.php:31
+msgid "Are you sure?"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Articles/view.php:6
+msgid "Tags:"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Error/_error500.php:1
+msgid "Having error"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/add.php:10
+#: C:/wamp64/www/cms/templates/Tags/edit.php:10
+#: C:/wamp64/www/cms/templates/Tags/index.php:18
+#: C:/wamp64/www/cms/templates/Tags/view.php:10
+#: C:/wamp64/www/cms/templates/Tags/view.php:52
+#: C:/wamp64/www/cms/templates/Users/add.php:10
+#: C:/wamp64/www/cms/templates/Users/edit.php:10
+#: C:/wamp64/www/cms/templates/Users/index.php:19
+#: C:/wamp64/www/cms/templates/Users/view.php:10
+#: C:/wamp64/www/cms/templates/Users/view.php:56
+msgid "Actions"
+msgstr "Hành động"
+
+#: C:/wamp64/www/cms/templates/Tags/add.php:11
+#: C:/wamp64/www/cms/templates/Tags/edit.php:16
+#: C:/wamp64/www/cms/templates/Tags/view.php:13
+msgid "List Tags"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/add.php:18
+msgid "Add Tag"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/add.php:24
+#: C:/wamp64/www/cms/templates/Tags/edit.php:29
+#: C:/wamp64/www/cms/templates/Users/add.php:24
+#: C:/wamp64/www/cms/templates/Users/edit.php:29
+msgid "Submit"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/edit.php:14
+#: C:/wamp64/www/cms/templates/Tags/index.php:31
+#: C:/wamp64/www/cms/templates/Tags/view.php:12
+#: C:/wamp64/www/cms/templates/Tags/view.php:67
+#: C:/wamp64/www/cms/templates/Users/edit.php:14
+#: C:/wamp64/www/cms/templates/Users/index.php:33
+#: C:/wamp64/www/cms/templates/Users/view.php:12
+#: C:/wamp64/www/cms/templates/Users/view.php:71
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/edit.php:23
+#: C:/wamp64/www/cms/templates/Tags/view.php:11
+msgid "Edit Tag"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:8
+#: C:/wamp64/www/cms/templates/Tags/view.php:14
+msgid "New Tag"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:9
+#: C:/wamp64/www/cms/templates/layout/default.php:48
+msgid "Tags"
+msgstr "Thẻ"
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:29
+#: C:/wamp64/www/cms/templates/Tags/view.php:65
+#: C:/wamp64/www/cms/templates/Users/index.php:31
+#: C:/wamp64/www/cms/templates/Users/view.php:69
+#: View/Helper/PaginatorHelper.php:1268
+msgid "View"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:40
+#: C:/wamp64/www/cms/templates/Users/index.php:42
+msgid "first"
+msgstr "đầu"
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:41
+#: C:/wamp64/www/cms/templates/Users/index.php:43
+msgid "previous"
+msgstr "trước"
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:43
+#: C:/wamp64/www/cms/templates/Users/index.php:45
+msgid "next"
+msgstr "kế"
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:44
+#: C:/wamp64/www/cms/templates/Users/index.php:46
+msgid "last"
+msgstr "cuối"
+
+#: C:/wamp64/www/cms/templates/Tags/index.php:46
+#: C:/wamp64/www/cms/templates/Users/index.php:48
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:12
+msgid "Delete Tag"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:26
+#: C:/wamp64/www/cms/templates/Tags/view.php:44
+#: C:/wamp64/www/cms/templates/Users/view.php:30
+#: C:/wamp64/www/cms/templates/Users/view.php:48
+msgid "Id"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:34
+#: C:/wamp64/www/cms/templates/Tags/view.php:51
+#: C:/wamp64/www/cms/templates/Users/view.php:38
+#: C:/wamp64/www/cms/templates/Users/view.php:55
+msgid "Modified"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:39
+#: C:/wamp64/www/cms/templates/Users/view.php:43
+msgid "Related Articles"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:45
+#: C:/wamp64/www/cms/templates/Users/view.php:49
+msgid "User Id"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:47
+#: C:/wamp64/www/cms/templates/Users/view.php:51
+msgid "Slug"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:48
+#: C:/wamp64/www/cms/templates/Users/view.php:52
+msgid "Body"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Tags/view.php:49
+#: C:/wamp64/www/cms/templates/Users/view.php:53
+msgid "Published"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/add.php:11
+#: C:/wamp64/www/cms/templates/Users/edit.php:16
+#: C:/wamp64/www/cms/templates/Users/view.php:13
+msgid "List Users"
+msgstr "Danh sách tài khoản"
+
+#: C:/wamp64/www/cms/templates/Users/add.php:18
+msgid "Add User"
+msgstr "Thêm tài khoản"
+
+#: C:/wamp64/www/cms/templates/Users/edit.php:23
+#: C:/wamp64/www/cms/templates/Users/view.php:11
+msgid "Edit User"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/index.php:8
+#: C:/wamp64/www/cms/templates/Users/view.php:14
+msgid "New User"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/index.php:9
+#: C:/wamp64/www/cms/templates/layout/default.php:47
+msgid "Users"
+msgstr "Người dùng"
+
+#: C:/wamp64/www/cms/templates/Users/login.php:3
+#: C:/wamp64/www/cms/templates/Users/login.php:12
+#: C:/wamp64/www/cms/templates/layout/default.php:58
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: C:/wamp64/www/cms/templates/Users/login.php:7
+msgid "Please enter your email and password"
+msgstr "Hãy nhập email và mật khẩu"
+
+#: C:/wamp64/www/cms/templates/Users/login.php:15
+msgid "Add user"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/view.php:12
+msgid "Delete User"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/view.php:22
+msgid "Email"
+msgstr ""
+
+#: C:/wamp64/www/cms/templates/Users/view.php:26
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: C:/wamp64/www/cms/templates/layout/default.php:46
+msgid "Home"
+msgstr "Trang chủ"
+
+#: C:/wamp64/www/cms/templates/layout/default.php:53
+msgid "User ID:"
+msgstr "Người dùng ID:"
+
+#: C:/wamp64/www/cms/templates/layout/default.php:54
+msgid "Logout"
+msgstr "Thoát"
+
+#: Controller/ArticlesController.php:44 Controller/ArticlesController.php:71
+msgid "Article has been save successfully"
+msgstr "Bài viết được lưu  thành công"
+
+#: Controller/ArticlesController.php:47 Controller/ArticlesController.php:74
+msgid "Saving article failed"
+msgstr "Bài viết lưu không thành công"
+
+#: Controller/ArticlesController.php:92
+msgid "The article {0} has been deleted!"
+msgstr "Bài viết {0} đã được xóa!"
+
+#: Controller/TagsController.php:53 Controller/TagsController.php:78
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:57 Controller/TagsController.php:82
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:100
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:102
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:36
+msgid "Invalid username or password"
+msgstr "Sai tên đăng nhập hoặc mật khẩu"
+
+#: Controller/UsersController.php:91 Controller/UsersController.php:115
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:95 Controller/UsersController.php:119
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:136
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:138
+msgid "The user could not be deleted. Please, try again."
+msgstr ""

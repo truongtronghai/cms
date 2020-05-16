@@ -62,8 +62,8 @@ $routes->scope('/', function (RouteBuilder $builder) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, templates/Pages/home.php)...
      */
-    $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
+    //$builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $builder->connect('/', ['controller' => 'articles', 'action' => 'index', 'home']);
     /*
      * ...and connect the rest of 'Pages' controller's URLs.
      */
@@ -82,6 +82,15 @@ $routes->scope('/', function (RouteBuilder $builder) {
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
+
+     /*
+     * dinh nghia mot route moi cho action tags
+     * $builder->connect('/tagged/*',['controller'=>'Articles','action'=>'tags']); // phai co dau '*' o tham so dau tien
+     */
+     $builder->scope('/articles', function(RouteBuilder $builder){
+        $builder->connect('/tagged/*',['controller'=>'Articles','action'=>'tags']);
+     });
+
     $builder->fallbacks();
 });
 
